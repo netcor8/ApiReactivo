@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "d5cb15d1-bfb0-43eb-ac19-cd6cb4c6d0b4",
+		"name": "EvaluaciónApiReactivo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20492526"
+	},
+	"item": [
+		{
+			"name": "crearCliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"id\": 9,\r\n    \"identificacion\": \"123456\",\r\n    \"nombre\": \"Juan\",\r\n    \"apellido\": \"Lopez\",\r\n    \"paisResidencia\": \"CR\",\r\n    \"paisNacimiento\": \"CR\",\r\n    \"direccion\": \"Cartago\",\r\n    \"telefono\": \"8574562\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/api/cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"api",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultartodosClientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/api/cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"api",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
